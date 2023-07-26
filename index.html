@@ -5,17 +5,23 @@
     <meta charset="UTF-8">
     <title>Cafe Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
-
-        <nav class="container">
-            <img class="logo" src="logo.png" alt="logoimage">
-            <ul>
+        <div class="sidebar">
+            <div class="menuicon" id="menuIcon"><i class="fa-solid fa-bars fa-lg" style="color: #fcfcfc;"></i>
+            </div>
+        </div>
+        <img class="logo" src="logo.png" alt="logoimage">
+        <nav id="mySidebar" class="container navitems">
+            <div class="items-space">
+            <ul class="hide">
+               
                 <li><a href="#home1">
                         Home</li>
                 </a>
@@ -31,14 +37,22 @@
                 <li><a href="#contact1">
                         Contact</li>
                 </a>
+                <div class="menuiconclose" id="closeMenuIcon">
+                    <li> <i class="fa-solid fa-xmark fa-lg" style="color: #fcfcfc;"></i></li>
+                </div>
+
+                </div>
             </ul>
+            </div>
         </nav>
+
     </header>
     <section class="home" id="home1">
         <div class="content">
             <h1 class="title"><span>Brewtiful Bites</span> : Where Deliciousness Meets Coffee Bliss</h1>
             <p class="description">Discover the harmonious blend of irresistible bites and exceptional coffee at
-                Brewtiful Bites. Experience a captivating culinary journey where flavors intertwine seamlessly, creating
+                Brewtiful Bites. Experience a captivating culinary journey where flavors intertwine seamlessly,
+                creating
                 moments of pure delight and satisfaction. Join us for a brewtiful experience unlike any other.</p>
         </div>
         <div class="image">
@@ -50,19 +64,24 @@
         <div class="content2">
             <h2 class="title2">About Us</h2>
             <p class="description2">Established in 1995 by coffee aficionado Olivia Brewster, Brewtiful Bites Café
-                quickly became renowned for its exceptional coffee. Olivia's commitment to sourcing the finest beans and
+                quickly became renowned for its exceptional coffee. Olivia's commitment to sourcing the finest beans
+                and
                 meticulous roasting techniques set the café apart. With a diverse menu of specialty coffees and
                 delectable pastries, Brewtiful Bites offers an unparalleled coffee experience. Today, it stands as a
                 beloved destination for coffee lovers seeking exquisite flavors and a warm, inviting
                 atmosphere.<br /><br />With the growing demand, Brewtiful Bites expanded its operations, opening
                 additional branches across the city. Each new location retained the café's signature charm and
-                commitment to quality, ensuring that customers could enjoy the same exceptional coffee no matter where
+                commitment to quality, ensuring that customers could enjoy the same exceptional coffee no matter
+                where
                 they were.
 
-                Today, Brewtiful Bites stands as a beacon of coffee excellence, serving as a sanctuary for those seeking
-                a moment of tranquility amidst their busy lives. The café's unwavering dedication to sourcing the finest
+                Today, Brewtiful Bites stands as a beacon of coffee excellence, serving as a sanctuary for those
+                seeking
+                a moment of tranquility amidst their busy lives. The café's unwavering dedication to sourcing the
+                finest
                 beans, expertly roasting them, and providing exceptional customer service has made it a beloved
-                destination for coffee lovers far and wide. At Brewtiful Bites, every sip is an invitation to savor the
+                destination for coffee lovers far and wide. At Brewtiful Bites, every sip is an invitation to savor
+                the
                 artistry and passion that goes into every cup.</p>
         </div>
     </section>
@@ -215,9 +234,11 @@
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa-regular fa-star fa-sm"></span>
-                <p class="comments">Brewtiful Bites takes coffee to a whole new level! From their rich and bold espresso
+                <p class="comments">Brewtiful Bites takes coffee to a whole new level! From their rich and bold
+                    espresso
                     shots to their
-                    creamy and indulgent lattes, every sip is a treat. The cozy atmosphere and friendly staff make it
+                    creamy and indulgent lattes, every sip is a treat. The cozy atmosphere and friendly staff make
+                    it
                     the perfect spot to relax and savor your favorite brew. Highly recommended!</p>
             </div>
             <div class="reviewframe">
@@ -227,10 +248,13 @@
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa-regular fa-star-half-stroke fa-sm"></span>
-                <p class="comments">A coffee lover's paradise! Their wide selection of coffee varieties is impressive,
+                <p class="comments">A coffee lover's paradise! Their wide selection of coffee varieties is
+                    impressive,
                     offering something
-                    for every palate. Whether you prefer a smooth pour-over or a velvety cappuccino, they have it all.
-                    Don't forget to try their scrumptious baked treats that perfectly complement the aromatic coffees.
+                    for every palate. Whether you prefer a smooth pour-over or a velvety cappuccino, they have it
+                    all.
+                    Don't forget to try their scrumptious baked treats that perfectly complement the aromatic
+                    coffees.
                 </p>
             </div>
             <div class="reviewframe">
@@ -240,10 +264,13 @@
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
-                <p class="comments"> A hidden gem for coffee aficionados! The moment you step in, the delightful aroma
+                <p class="comments"> A hidden gem for coffee aficionados! The moment you step in, the delightful
+                    aroma
                     of freshly brewed
-                    coffee greets you. Their passionate baristas create exquisite latte art that adds an artistic touch
-                    to your morning routine. The attention to detail and quality of their coffee beans are evident in
+                    coffee greets you. Their passionate baristas create exquisite latte art that adds an artistic
+                    touch
+                    to your morning routine. The attention to detail and quality of their coffee beans are evident
+                    in
                     every sip. A true coffee connoisseur's haven!</p>
             </div>
         </div>
@@ -291,6 +318,8 @@
             </div>
         </footer>
     </section>
+    <script src="script.js"></script>
+
 </body>
 
 </html>
